@@ -1,0 +1,111 @@
+body {
+  background-color: #cac0c0bd !important;
+}
+
+.rotate {
+    position: absolute;
+    /* left:-42%; */
+    /* top: 0%; */
+
+    animation: rotation 6s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.logo {
+  position: relative;
+  left: 22px;
+  top: 20px;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px;
+  height: 200px;
+  background: white;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
+  margin-top: 30px;
+  transition: all .3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: rgba(0,0,0,.075) 0px 19px 43px;
+  transform: translate3d(-4px, -4px, 8px);
+}
+
+.green-grad {
+  background: linear-gradient(0deg, green 30%, #FFFF 30%);
+}
+
+.yellow-grad {
+  background: linear-gradient(0deg, yellow 60%,  #FFFF 40%);
+}
+
+.red-grad {
+  /* background: rgb(121,9,9); */
+  background: linear-gradient(0deg, rgb(243, 46, 46) 70%, #FFFF 30%);
+}
+
+.card-content {
+  align-self: center;
+  line-height: 120px;
+}
+
+.card .a {
+  align-self: center;
+  line-height: 120px;
+  color: black !important;
+  font-size: 4rem;
+  text-decoration: none !important;
+}
+
+.card a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.card .card-content {
+  text-align: center;
+}
+
+.header-card span {
+  border: none;
+  padding: 0px 10px;
+  border-radius: 3px;
+  background-color: lightgray;
+}
+
+.header {
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dropdown-item {
+  padding: 0.55rem 1rem !important;
+}
+
+.dropdown-menu {
+  min-width: 13rem !important;
+  font-size: 1.3rem !important;
+}
+
+.notif-num {
+  position: absolute;
+  background: #ed4444;
+  padding: 1px 9px;
+  border-radius: 50%;
+  color: white;
+  top: -12px;
+  left: 35px;
+}
